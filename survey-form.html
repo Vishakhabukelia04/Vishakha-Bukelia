@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-form.css"/>
+</head>
+<body>
+  <meta name="viewport" content="width=device-width" initial-scale="0">
+  <form id="survey-form">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Share your CII experiences with us!</p>
+ 
+ <fieldset>
+  <label id="name-label">Your Name <input id="name" type="text" placeholder="Vishakha Bukelia" required /></label>
+   <label id="email-label">Your Email <input id="email" type="email" placeholder="bukeliavishakha@email.com" required /></label>
+   <label id="number-label">Your Age <input id="number" type="number" min="15" max="45" placeholder="20" required /></label>
+   </fieldset>
+   <fieldset>
+     <label>Are you a student?</label>
+    <select id="dropdown" required >
+      <option>Yes</option>
+      <option>No</option>
+      </select>
+     <label id="number-label"> When did you join?</label> <input id="joining-date" type="date" />
+      <label> What department are you in?</label> <select id="dropdown" name="department">
+        <option>Select</option>
+        <option>Culinary</option>
+        <option>Rooms</option>
+        <option>Service</option>
+        </select>
+        </fieldset>
+   <fieldset>
+     <legend>Did you Graduate?</legend>
+     <label><input type="radio" value="yes" name="graduate" checked> Yes</label>
+     <label><input type="radio" value="no" name="graduate"> No</label>
+     </fieldset>
+   <fieldset>
+     <label>How was your experience?</label>
+     <label><input type="checkbox" name="Excellent" value="1" required>Excellent</label>
+   <label><input type="checkbox" name="Good" value="1" required>Good</label>
+  <label><input type="checkbox" name="Average" value="1" />Average</label>
+     <label><input type="checkbox" name="Bad" value="1" />Bad</label>
+       <label><input type="checkbox" name="Very Bad" value="1" />Very Bad</label>
+    <label class="experience">Please Elaborate your experience: </label>
+      <textarea type="textarea" max="150" placeholder="Enter your comments here..."></textarea>
+    </fieldset>
+      <input id="submit" type="submit">
+    </form>
+   </html>
