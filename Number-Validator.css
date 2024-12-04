@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --color1: #A59D84;
+    --color2: #C1BAA1;
+    --color3: #D7D3BF;
+    --color4: #ECEBDE;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+  }
+  
+  h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color4);
+    padding: 10px 0px;
+    margin-bottom: 25px;
+  }
+
+.phone{
+  width: 320px;
+  height: 530px;
+  background-color: var(--color4);
+  border: 15px solid var(--color1);
+  border-radius: 20px;
+}
+
+.background{
+  width: 100%;
+  height: 25px;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+}
+
+.camera{
+  width: 10px;
+  height: 10px;
+  background-color: var(--color4);
+  border-radius: 50%;
+}
+
+.input-container{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.user-input{
+  width: 90%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.result{
+  overflow-y: auto;
+  width: 100%;
+  height: 336px;
+}
+
+.result-text{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.buttons{
+  width: 100%;
+  height: 50px;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-btn{
+  width: 100px;
+  height: 37px;
+  margin: 0px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-image: linear-gradient(var(--color3), var(--color4));
+  border: 2px solid var(--color4);
+}
+
+.clear-btn{
+  width: 100px;
+  height: 37px;
+  margin: 0px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-image: linear-gradient(var(--color3), var(--color4));
+  border: 2px solid var(--color4);
+}
